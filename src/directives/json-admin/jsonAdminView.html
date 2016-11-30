@@ -1,0 +1,57 @@
+<div>
+
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <span>Editeur JSON</span>
+
+            <!-- fill up the space between left and right area -->
+            <span flex></span>
+
+            <md-button class="md-raised md-primary" ng-click="newAction()">
+                Nouveau
+            </md-button>
+            <md-button class="md-raised md-warn" ng-click="confirmAndDeleteAction($event)">
+                Supprimer
+            </md-button>
+            <md-button class="md-raised md-accent" ng-click="clearActionLocalChange()">
+                Annuler
+            </md-button>
+            <md-button class="md-raised md-primary" ng-click="saveAction()">
+                Sauvegarder
+            </md-button>
+            <md-button class="md-raised md-primary" ng-click="showHelp()">
+                ?
+            </md-button>
+        </div>
+    </md-toolbar>
+
+    <div layout="row">
+        <md-content flex="30">
+
+            <md-list>
+                <md-subheader class="md-no-sticky">Listes des commandes</md-subheader>
+                <md-list-item class="md-1-line" ng-repeat="item in actions.data" ng-click="selectAction(item)">
+                    <div class="md-list-item-text" layout="column">
+                        {{item.name}}
+                    </div>
+                </md-list-item>
+            </md-list>
+
+        </md-content>
+
+        <md-content flex="70">
+            <div ui-ace="aceOption" ng-model="aceModel" style="width: 100%;height:350px"></div>
+            <div ng-if="errors.length || editorError" layout="row" class="warn-font" style="font-size: 0.9em">
+
+                <md-icon md-svg-src="material-design:error_outline" class="ic_16px warn-font" style="margin: 0 2px;"></md-icon>
+
+                <span ng-if="errors.length" ng-repeat="error in errors">{{error}}</span>
+
+                <span ng-if="editorError">{{editorError}}</span>
+
+            </div>
+        </md-content>
+    </div>
+    </md-content>
+
+</div>
