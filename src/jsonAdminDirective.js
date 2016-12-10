@@ -1,10 +1,10 @@
 'use strict';
 
-angular.module('eklabs.angularStarterPack.ttcJsonAdmin', ['ngMaterial'])
+angular.module('ttcJsonAdmin', ['ngMaterial'])
     .directive('ttcJsonAdmin', ['$log', '$http', '$mdDialog', function($log,
         $http, $mdDialog) {
         return {
-            templateUrl: 'eklabs.angularStarterPack/modules/ttc-json-admin/directives/json-admin/jsonAdminView.html',
+            templateUrl: './jsonAdminView.html',
             scope: {
                 'routeApiActions': '=routeApiActions'
             },
