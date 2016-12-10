@@ -1,0 +1,25 @@
+{
+  "name": "eklabs.angularStarterPack",
+  "version": "0.2.3",
+  "description": "AngularJS Starter Pack",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kiwouz/eklabs.angularStarterPack"
+  },
+  "dependencies": {
+    "angular": "~1.5.8",
+    "jquery": "~2.1",
+    "moment": "~2.11.1",
+    "angular-material": "1.1.1",
+    "angular-resource": "~1.5.8",
+    "angular-sanitize": "~1.5.8",
+    "angular-ui-ace": "bower",
+    "angular-local-storage": "~0.2.2",
+    "ng-file-upload": "~9.0.7"
+  },
+  "devDependencies": {
+    "angular-ui-router": "~0.2.15",
+    "json-formatter": "json-formatter#0.6.0",
+    "angular-highlightjs": "~0.6.1"
+  }
+}
