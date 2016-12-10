@@ -1,11 +1,11 @@
 'use strict';
 
-angular.module('ttcJsonAdminModule', ['ngMaterial'])
+angular.module('ttcJsonAdminModule', ['ngMaterial', 'ui.ace'])
     .directive('ttcJsonAdmin', ['$log', '$http', '$mdDialog', function($log,
         $http, $mdDialog) {
         return {
             restrict : 'E',
-            templateUrl: './jsonAdminView.html',
+            templateUrl: '../src/jsonAdminView.html',
             scope: {
                 'routeApiActions': '=routeApiActions'
             },
