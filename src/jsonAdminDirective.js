@@ -5,7 +5,7 @@ angular.module('ttcJsonAdminModule', ['ngMaterial', 'ui.ace'])
         $http, $mdDialog) {
         return {
             restrict : 'E',
-            templateUrl: '../src/jsonAdminView.html',
+            templateUrl: './jsonAdminView.html',
             scope: {
                 'routeApiActions': '=routeApiActions'
             },
