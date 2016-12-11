@@ -44,14 +44,6 @@ module.exports = function (grunt) {
             build: {
                 src: files.src, // -> need to order concat
                 dest: '<%= builddir %>/<%= pkg.name %>.js'
-            },
-            css : {
-                src : ['.tmp/styles/{**/,}*.css','.tmp/public/{**/,}*.css'], // -> need to order concat
-                dest : '<%= builddir %>/<%= pkg.name %>.css',
-                options : {
-                    banner : '',
-                    footer : ''
-                }
             }
         },
 
@@ -91,11 +83,6 @@ module.exports = function (grunt) {
                     'src/*.html'
                 ],
                 tasks: ['build'] //['build', 'karma:background:run']
-            },
-
-            compass: {
-                files: ['src/{,*/}*.{scss,sass}'],
-                tasks: ['compass:server']
             }
         },
 
@@ -163,11 +150,6 @@ module.exports = function (grunt) {
                 files: [
 
                 ]
-            },
-            styles : {
-                expand: true,
-                src: 'src/{**/,}*.css',
-                dest: '.tmp/styles'
             },
             font : {
                 flatten : true,
