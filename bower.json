@@ -13,7 +13,7 @@
     "angular-resource": "~1.5.8",
     "angular-sanitize": "~1.5.8",
     "angular-ui-ace": "bower",
-    "ttc-jsonAdmin": "git://github.com/MadStain/ttc-jsonAdmin.git#0.1.3"
+    "ttc-jsonAdmin": "git://github.com/MadStain/ttc-jsonAdmin.git#0.1.4"
 
 
 
