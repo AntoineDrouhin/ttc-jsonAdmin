@@ -41,9 +41,7 @@ jspm_packages
 bower_components
 
 # Project
-dist
 .tmp
 .sass-cache
-demo/config.js
 build
 .DS_Store
