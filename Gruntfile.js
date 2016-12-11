@@ -116,14 +116,14 @@ module.exports = function (grunt) {
         ngtemplates: {
             app : {
                 src: ['src/*.html'],
-                dest: '<%= builddir %>/ttc-jsonAdmin_view.js',
+                dest: '<%= builddir %>/ttcJsonAdmin_view.js',
                 concat: 'dist',
                 options: {
                     url: function (url) {
                         url = url.substr(0, 4) === 'src/' ? url.substr(4) : url;
-                        return 'ttc-jsonAdmin/'+url;
+                        return 'ttcJsonAdmin/'+url;
                     },
-                    module: 'ttc-jsonAdmin'
+                    module: 'ttcJsonAdminModule'
                 }
             }
         },
