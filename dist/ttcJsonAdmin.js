@@ -1,6 +1,6 @@
 /**
  * Admin json action registering
- * @version v0.1.0-dev-2016-12-11
+ * @version v1.0.0-dev-2016-12-12
  * @link 
  */
 
