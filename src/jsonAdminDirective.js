@@ -67,12 +67,6 @@ angular.module('ttcJsonAdminModule', ['ngMaterial', 'ui.ace'])
             },
             link: function(scope) {
 
-
-
-
-                // TODO : Faire une factory pour les objets que l'on utilise (voir le code factory du prof)
-                // TODO : Mettre la route de l'api dans le fichier de config.
-                // TODO : Voir le factory USER du prod pour prendre exemple
                 scope.actions = {};
                 scope.actions.data = [];
                 scope.selectedAction = {};
@@ -166,8 +160,6 @@ angular.module('ttcJsonAdminModule', ['ngMaterial', 'ui.ace'])
                     scope.maxHeightContainer = height - 45;
                 });
 
-
-                // TODO Faire une factory avec les modeles
                 /*
                  * ACTIONS
                  */
